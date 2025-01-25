@@ -86,3 +86,56 @@ Call log:
 2025-01-25T12:37:27+01:00 [info]: Service Title is visible
 2025-01-25T12:37:27+01:00 [info]: Test for login is completed
 2025-01-25T12:37:27+01:00 [info]: Auth state is saved
+2025-01-25T17:14:30+01:00 [info]: Test for Contact Creation is started...
+2025-01-25T17:14:34+01:00 [info]: Clicked login button
+2025-01-25T17:14:37+01:00 [info]: Service Title is visible
+2025-01-25T17:15:27+01:00 [info]: Test for Contact Creation is started...
+2025-01-25T17:15:29+01:00 [info]: Clicked login button
+2025-01-25T17:15:33+01:00 [info]: Service Title is visible
+2025-01-25T17:16:36+01:00 [info]: Test for Contact Creation is started...
+2025-01-25T17:16:38+01:00 [info]: Clicked login button
+2025-01-25T17:16:42+01:00 [info]: Service Title is visible
+2025-01-25T17:17:04+01:00 [info]: Test for Contact Creation is started...
+2025-01-25T17:17:05+01:00 [info]: Clicked login button
+2025-01-25T17:17:09+01:00 [info]: Service Title is visible
+2025-01-25T17:39:45+01:00 [info]: Test for Contact Creation is started...
+2025-01-25T17:40:07+01:00 [info]: Clicked login button
+2025-01-25T17:40:13+01:00 [info]: Service Title is visible
+2025-01-25T17:40:19+01:00 [info]: App Launcher is opened
+2025-01-25T17:43:19+01:00 [info]: Test for Contact Creation is started...
+2025-01-25T17:43:21+01:00 [info]: Clicked login button
+2025-01-25T17:43:25+01:00 [info]: Service Title is visible
+2025-01-25T17:43:35+01:00 [info]: App Launcher is opened
+2025-01-25T17:46:13+01:00 [info]: Test for Contact Creation is started...
+2025-01-25T17:46:14+01:00 [info]: Clicked login button
+2025-01-25T17:46:18+01:00 [info]: Service Title is visible
+2025-01-25T17:46:18+01:00 [info]: App Launcher is opened
+2025-01-25T17:48:36+01:00 [info]: Test for Contact Creation is started...
+2025-01-25T17:48:38+01:00 [info]: Clicked login button
+2025-01-25T17:48:42+01:00 [info]: Service Title is visible
+2025-01-25T17:48:42+01:00 [info]: App Launcher is opened
+2025-01-25T17:48:58+01:00 [info]: Contacts Tab is clicked.
+2025-01-25T17:49:00+01:00 [info]: New button is clicked
+2025-01-25T17:49:01+01:00 [info]: First name is filled as John
+2025-01-25T17:49:02+01:00 [info]: Last name is filled as Doe
+2025-01-25T17:49:02+01:00 [info]: Save Button is clicked
+2025-01-25T17:50:49+01:00 [info]: Test for Contact Creation is started...
+2025-01-25T17:50:51+01:00 [info]: Clicked login button
+2025-01-25T17:50:55+01:00 [info]: Service Title is visible
+2025-01-25T17:50:55+01:00 [info]: App Launcher is opened
+2025-01-25T17:50:56+01:00 [info]: Contacts Tab is clicked.
+2025-01-25T17:50:59+01:00 [info]: New button is clicked
+2025-01-25T17:51:01+01:00 [info]: First name is filled as John
+2025-01-25T17:51:01+01:00 [info]: Last name is filled as Doe
+2025-01-25T17:51:01+01:00 [info]: Save Button is clicked
+2025-01-25T17:54:50+01:00 [info]: Test for Contact Creation is started...
+2025-01-25T17:54:53+01:00 [info]: Clicked login button
+2025-01-25T17:54:57+01:00 [info]: Service Title is visible
+2025-01-25T17:54:57+01:00 [info]: App Launcher is opened
+2025-01-25T17:54:58+01:00 [info]: Contacts Tab is clicked.
+2025-01-25T17:55:01+01:00 [info]: New button is clicked
+2025-01-25T17:55:03+01:00 [info]: First name is filled as John
+2025-01-25T17:55:03+01:00 [info]: Last name is filled as Doe
+2025-01-25T17:55:03+01:00 [info]: Save Button is clicked
+2025-01-25T17:55:05+01:00 [info]: New contact created and John Doe is visible
+2025-01-25T17:55:05+01:00 [info]: Test for Contact Creation is completed
