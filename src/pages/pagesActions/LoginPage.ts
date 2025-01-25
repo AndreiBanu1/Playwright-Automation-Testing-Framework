@@ -2,6 +2,7 @@ import { Page } from "@playwright/test";
 import HomePage from "./HomePage";
 import LoginPageElements from "../elements/LoginPageElements";
 import logger from "../../utils/LoggerUtil";
+import { decrypt } from "../../utils/CryptojsUtil";
 
 export default class LoginPage {
     private elements: LoginPageElements;
@@ -11,7 +12,9 @@ export default class LoginPage {
     }
 
     async navigateToLoginPage() {
-        await this.page.goto(process.env.url!);
+        console.log("Encrypted URL:", process.env.url);
+        console.log("Decrypted URL:", decrypt(process.env.url!));
+        await this.page.goto(decrypt(process.env.url!));
     }
 
     async fillUsername(username: string) {

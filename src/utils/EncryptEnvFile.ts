@@ -23,7 +23,11 @@ export function encryptEnvFile() {
 
   // Encrypt values and update the array
   const encryptedLines = envLines.map((line) => {
-    const [key, value] = line.split("=");
+    const index = line.indexOf("=");
+    if (index === -1) return line; // Skip invalid lines
+    const key = line.substring(0, index);
+    const value = line.substring(index + 1);
+
 
     if (value) {
       const encryptedValue = CryptoJSUtilFile.AES.encrypt(
@@ -50,7 +54,10 @@ export function decryptEnvFile() {
 
   // Encrypt values and update the array
   const decryptedLines = envLines.map((line) => {
-    const [key, value] = line.split("=");
+    const index = line.indexOf("=");
+    if (index === -1) return line; // Skip invalid lines
+    const key = line.substring(0, index);
+    const value = line.substring(index + 1);
 
     if (value) {
       const decryptedValue = CryptoJSUtilFile.AES.decrypt(value, SALT).toString(

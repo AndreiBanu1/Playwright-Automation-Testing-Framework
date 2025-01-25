@@ -2,3 +2,87 @@
 2025-01-25T12:03:55+01:00 [info]: Service Title is visible
 2025-01-25T12:10:01+01:00 [info]: Clicked login button
 2025-01-25T12:10:03+01:00 [info]: Service Title is visible
+2025-01-25T12:15:00+01:00 [info]: Clicked login button
+2025-01-25T12:15:15+01:00 [error]: Error waiting for Service Title to be visible: Error: [31mTimed out 15000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2025-01-25T12:16:56+01:00 [info]: Clicked login button
+2025-01-25T12:17:11+01:00 [error]: Error waiting for Service Title to be visible: Error: [31mTimed out 15000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2025-01-25T12:17:42+01:00 [info]: Clicked login button
+2025-01-25T12:17:57+01:00 [error]: Error waiting for Service Title to be visible: Error: [31mTimed out 15000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2025-01-25T12:23:28+01:00 [info]: Clicked login button
+2025-01-25T12:23:43+01:00 [error]: Error waiting for Service Title to be visible: Error: [31mTimed out 15000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2025-01-25T12:23:54+01:00 [info]: Clicked login button
+2025-01-25T12:24:09+01:00 [error]: Error waiting for Service Title to be visible: Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2025-01-25T12:34:35+01:00 [info]: Clicked login button
+2025-01-25T12:34:50+01:00 [error]: Error waiting for Service Title to be visible: Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2025-01-25T12:35:22+01:00 [info]: Clicked login button
+2025-01-25T12:35:27+01:00 [error]: Error waiting for Service Title to be visible: Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2025-01-25T12:36:50+01:00 [info]: Clicked login button
+2025-01-25T12:36:50+01:00 [error]: Error waiting for Service Title to be visible: Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+
+2025-01-25T12:37:24+01:00 [info]: Clicked login button
+2025-01-25T12:37:27+01:00 [info]: Service Title is visible
+2025-01-25T12:37:27+01:00 [info]: Test for login is completed
+2025-01-25T12:37:27+01:00 [info]: Auth state is saved
