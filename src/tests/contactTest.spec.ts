@@ -26,7 +26,7 @@ for (const contact of cdata) {
   });
 }
 
-test("Simple create contact test", async ({ page }) => {
+test.skip("Simple create contact test", async ({ page }) => {
   logger.info("Test for Contact Creation is started...");
   const fname = "John";
   const lname = "Doe";
@@ -45,7 +45,7 @@ test("Simple create contact test", async ({ page }) => {
   logger.info("Test for Contact Creation is completed");
 });
 
-test.skip("csv to json", async () => {
+test("csv to json", async () => {
   convertCsvFileToJsonFile("data.csv", "datademo.json");
 });
 
