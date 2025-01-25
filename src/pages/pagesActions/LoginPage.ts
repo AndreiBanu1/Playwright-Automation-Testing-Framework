@@ -1,6 +1,7 @@
 import { Page } from "@playwright/test";
 import HomePage from "./HomePage";
 import LoginPageElements from "../elements/LoginPageElements";
+import logger from "../../utils/LoggerUtil";
 
 export default class LoginPage {
     private elements: LoginPageElements;
@@ -28,7 +29,7 @@ export default class LoginPage {
             .catch((error) => {
                 console.error(`Error clicking the login button: ${error}`);
                 throw error;
-            });
+            }).then(() => logger.info("Clicked login button"));
 
         return new HomePage(this.page);
     }
