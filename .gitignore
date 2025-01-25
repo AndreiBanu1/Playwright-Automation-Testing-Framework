@@ -9,7 +9,3 @@ playwright/.cache/
 /src/config/.env
 /src/config/.env.qa
 /src/config/.env.uat
-
-
-# Ignore all .env files in general
-.env*
