@@ -1,12 +1,15 @@
-
-# Playwright
+# Ignore Playwright-related directories and files
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
 
-# Ignore .env files
+# Ignore all .env files, including specific ones
 /src/config/.env
 /src/config/.env.qa
 /src/config/.env.uat
+
+
+# Ignore all .env files in general
+.env*
