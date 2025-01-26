@@ -38,6 +38,7 @@ export default defineConfig({
     headless: true,
     trace: 'on-first-retry',
     screenshot: 'on',
+    baseURL: "https://login.salesforce.com"
   },
 
   /* Configure projects for major browsers */

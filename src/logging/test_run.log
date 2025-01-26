@@ -143,3 +143,54 @@ Call log:
 2025-01-26T15:42:05+01:00 [info]: Service Title is visible
 2025-01-26T15:42:05+01:00 [info]: Test for login is completed
 2025-01-26T15:42:06+01:00 [info]: Auth state is saved
+2025-01-26T16:33:15+01:00 [info]: Requested Url is https://login.salesforce.com/
+2025-01-26T16:33:15+01:00 [info]: Requested method is GET
+2025-01-26T16:33:15+01:00 [info]: Request headers is {
+  "accept-language": "en-US",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.6943.16 Safari/537.36",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"HeadlessChrome\";v=\"133\", \"Chromium\";v=\"133\"",
+  "sec-ch-ua-mobile": "?0",
+  "sec-ch-ua-platform": "\"Windows\""
+}
+2025-01-26T16:33:15+01:00 [info]: Response status is 200
+2025-01-26T16:33:15+01:00 [info]: Requested Url is https://login.salesforce.com/css/sfdc_210.css?v=3
+2025-01-26T16:33:15+01:00 [info]: Requested method is GET
+2025-01-26T16:33:15+01:00 [info]: Request headers is {
+  "sec-ch-ua-platform": "\"Windows\"",
+  "referer": "https://login.salesforce.com/",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.6943.16 Safari/537.36",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"HeadlessChrome\";v=\"133\", \"Chromium\";v=\"133\"",
+  "accept-language": "en-US",
+  "sec-ch-ua-mobile": "?0"
+}
+2025-01-26T16:33:15+01:00 [info]: Requested Url is https://login.salesforce.com/jslibrary/SfdcSessionBase208.js
+2025-01-26T16:33:15+01:00 [info]: Requested method is GET
+2025-01-26T16:33:15+01:00 [info]: Request headers is {
+  "sec-ch-ua-platform": "\"Windows\"",
+  "referer": "https://login.salesforce.com/",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.6943.16 Safari/537.36",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"HeadlessChrome\";v=\"133\", \"Chromium\";v=\"133\"",
+  "accept-language": "en-US",
+  "sec-ch-ua-mobile": "?0"
+}
+2025-01-26T16:33:15+01:00 [info]: Requested Url is https://login.salesforce.com/jslibrary/LoginHint208.js
+2025-01-26T16:33:15+01:00 [info]: Requested method is GET
+2025-01-26T16:33:15+01:00 [info]: Request headers is {
+  "sec-ch-ua-platform": "\"Windows\"",
+  "referer": "https://login.salesforce.com/",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.6943.16 Safari/537.36",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"HeadlessChrome\";v=\"133\", \"Chromium\";v=\"133\"",
+  "accept-language": "en-US",
+  "sec-ch-ua-mobile": "?0"
+}
+2025-01-26T16:33:15+01:00 [info]: Requested Url is https://login.salesforce.com/img/logo214.svg
+2025-01-26T16:33:15+01:00 [info]: Requested method is GET
+2025-01-26T16:33:15+01:00 [info]: Request headers is {
+  "sec-ch-ua-platform": "\"Windows\"",
+  "referer": "https://login.salesforce.com/",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.6943.16 Safari/537.36",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"HeadlessChrome\";v=\"133\", \"Chromium\";v=\"133\"",
+  "accept-language": "en-US",
+  "sec-ch-ua-mobile": "?0"
+}

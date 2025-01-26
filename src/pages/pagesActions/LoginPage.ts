@@ -1,8 +1,9 @@
-import { Page } from "@playwright/test";
+import { Page, expect } from "@playwright/test";
 import HomePage from "./HomePage";
 import LoginPageElements from "../elements/LoginPageElements";
 import logger from "../../utils/LoggerUtil";
 import { decrypt } from "../../utils/CryptojsUtil";
+import findValidElement from "../../utils/SelfHealingUtil";
 
 export default class LoginPage {
     private elements: LoginPageElements;
@@ -27,6 +28,13 @@ export default class LoginPage {
     async fillUsername(username: string) {
         await this.page.locator(this.elements.getUsernameInput()).fill(username);
     }
+
+    async fillUsername_selfheal(username: string) {
+        let usernameInputLocator = await findValidElement(this.page, this.elements.getUsernameInputs());
+        await usernameInputLocator?.fill(username);
+        const enteredValue = await usernameInputLocator?.inputValue();
+        expect(enteredValue).toBe(username);
+      }
 
     async fillPassword(password: string) {
         await this.page.locator(this.elements.getPasswordInput()).fill(password);
