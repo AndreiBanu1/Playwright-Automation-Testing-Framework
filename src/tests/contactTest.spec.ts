@@ -44,18 +44,16 @@ test.skip("Simple create contact test", async ({ page }) => {
   logger.info("Test for Contact Creation is completed");
 });
 
-test("csv to json", async () => {
-  convertCsvFileToJsonFile("data.csv", "datademo.json");
-});
+// test("csv to json", async () => {
+//   convertCsvFileToJsonFile("data.csv", "datademo.json");
+// });
 
 
-
-test.skip("Faker", async ({ page }) => { 
-  // Generate test data
-const testData = generateTestData(20);
-// Export data to JSON file
-exportToJson(testData, 'testData_en.json');
-// Export data to CSV file
-exportToCsv(testData, 'testData_en.csv');
-
- });
+// test.skip("Faker", async ({ page }) => { 
+//   // Generate test data
+// const testData = generateTestData(20);
+// // Export data to JSON file
+// exportToJson(testData, 'testData_en.json');
+// // Export data to CSV file
+// exportToCsv(testData, 'testData_en.csv');
+//  });
