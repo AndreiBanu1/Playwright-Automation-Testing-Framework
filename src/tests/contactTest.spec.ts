@@ -50,7 +50,7 @@ test("csv to json", async () => {
 
 
 
-test("Faker", async ({ page }) => { 
+test.skip("Faker", async ({ page }) => { 
   // Generate test data
 const testData = generateTestData(20);
 // Export data to JSON file

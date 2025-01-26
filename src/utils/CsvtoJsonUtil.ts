@@ -25,15 +25,15 @@ const csvFilePath = `${testdataDir}`;
  export  const convertCsvFileToJsonFile = (csvFileName, jsonFileName, delimiter = ',') => {
     try {
       // Read the CSV file
-      const csvData = fs.readFileSync(`${testdataDir}\\${csvFileName}`, 'utf8');
+      const csvData = fs.readFileSync(`${testdataDir}//${csvFileName}`, 'utf8');
   
       // Convert CSV to JSON
       const jsonData = CSVToJSON(csvData, delimiter);
   
       // Write JSON data to a new file
-      fs.writeFileSync(`${testdataDir}\\${jsonFileName}`, JSON.stringify(jsonData, null, 2));
+      fs.writeFileSync(`${testdataDir}//${jsonFileName}`, JSON.stringify(jsonData, null, 2));
   
-      console.log(`Conversion completed. JSON data written to: ${testdataDir}\\${jsonFileName}`);
+      console.log(`Conversion completed. JSON data written to: ${testdataDir}//${jsonFileName}`);
     } catch (error) {
       console.error('Error converting CSV to JSON:', error.message);
     }
