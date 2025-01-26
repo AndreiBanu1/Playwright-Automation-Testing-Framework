@@ -2,9 +2,8 @@ import { test } from "@playwright/test";
 import { decrypt } from "../utils/CryptojsUtil";
 import logger from "../utils/LoggerUtil";
 import { convertCsvFileToJsonFile } from "../utils/CsvtoJsonUtil";
-import cdata from "../testdata/contact.json";
-// import { exportToCsv, exportToJson, generateTestData } from "../utils/FakerDataUtil";
-// import { demoOutput } from "../utils/fakersample";
+import cdata from "../testdata/datademo.json";
+import { exportToCsv, exportToJson, generateTestData } from "../utils/FakerDataUtil";
 import LoginPage from "../pages/pagesActions/LoginPage";
 
 for (const contact of cdata) {
@@ -50,16 +49,13 @@ test("csv to json", async () => {
 });
 
 
-// test.skip("demo faker", async () => { 
-//   console.log(demoOutput)
-//  });
 
-// test.skip("Faker", async ({ page }) => { 
-//   // Generate test data
-// const testData = generateTestData(20);
-// // Export data to JSON file
-// exportToJson(testData, 'testData_en.json');
-// // Export data to CSV file
-// exportToCsv(testData, 'testData_en.csv');
+test("Faker", async ({ page }) => { 
+  // Generate test data
+const testData = generateTestData(20);
+// Export data to JSON file
+exportToJson(testData, 'testData_en.json');
+// Export data to CSV file
+exportToCsv(testData, 'testData_en.csv');
 
-//  });
+ });

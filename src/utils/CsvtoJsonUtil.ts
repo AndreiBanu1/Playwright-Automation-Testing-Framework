@@ -1,6 +1,7 @@
-
 import * as fs from 'fs';
 import path from 'path';
+
+
 const CSVToJSON = (data, delimiter = ',') => {
     const titles = data.slice(0, data.indexOf('\n')).split(delimiter);
     return data
@@ -16,15 +17,10 @@ const CSVToJSON = (data, delimiter = ',') => {
   };
 
 
-
-//   console.log(CSVToJSON('col1,col2\na,b\nc,d'));
-// Example usage
 const currentDir = __dirname;
-// Go one level above (back to 'src')
 const srcDir = path.resolve(currentDir, "..");
-
-// Change to 'config' folder
 const testdataDir = path.resolve(srcDir, "testdata");
+
 const csvFilePath = `${testdataDir}`;
  export  const convertCsvFileToJsonFile = (csvFileName, jsonFileName, delimiter = ',') => {
     try {
