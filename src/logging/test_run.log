@@ -139,3 +139,7 @@ Call log:
 2025-01-25T17:55:03+01:00 [info]: Save Button is clicked
 2025-01-25T17:55:05+01:00 [info]: New contact created and John Doe is visible
 2025-01-25T17:55:05+01:00 [info]: Test for Contact Creation is completed
+2025-01-26T15:42:02+01:00 [info]: Clicked login button
+2025-01-26T15:42:05+01:00 [info]: Service Title is visible
+2025-01-26T15:42:05+01:00 [info]: Test for login is completed
+2025-01-26T15:42:06+01:00 [info]: Auth state is saved

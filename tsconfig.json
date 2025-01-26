@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "target": "ES6",
     "module": "CommonJS",
     "strict": true,

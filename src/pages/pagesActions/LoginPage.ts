@@ -17,6 +17,13 @@ export default class LoginPage {
         await this.page.goto(decrypt(process.env.url!));
     }
 
+    async quickLogin(username: string, password: string) {
+        await this.navigateToLoginPage();
+        await this.fillUsername(username);
+        await this.fillPassword(password);
+        return await this.clickLoginButton();
+      }
+
     async fillUsername(username: string) {
         await this.page.locator(this.elements.getUsernameInput()).fill(username);
     }
