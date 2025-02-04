@@ -1,22 +1,27 @@
+import { Page, Locator } from "@playwright/test";
+
 export default class LoginPageElements {
-    private readonly usernameInputSelector = "#username";
-    private readonly usernameInputSelectors = ["#username",'input[name="username"]', ".username", "//*[@id='username]"];
-    private readonly passwordInputSelector = "#password";
-    private readonly loginButtonSelector = "#Login";
+  private readonly page: Page;
+  private readonly usernameInputSelectors = ["#username",'input[name="username"]', ".username", "//*[@id='username]"];
 
-    getUsernameInput() {
-        return this.usernameInputSelector;
-    }
+  constructor(page: Page) {
+    this.page = page;
+  }
 
-    getUsernameInputs() {
-        return this.usernameInputSelectors;
-    }
+  get usernameInput(): Locator {
+    return this.page.locator("#username");
+  }
 
-    getPasswordInput() {
-        return this.passwordInputSelector;
-    }
+  get passwordInput(): Locator {
+    return this.page.locator("#password");
+  }
 
-    getLoginButton() {
-        return this.loginButtonSelector;
-    }
+  get loginButton(): Locator {
+    return this.page.locator("#Login");
+  }
+
+  get usernameInputs() {
+    return this.usernameInputSelectors;
+}
+
 }

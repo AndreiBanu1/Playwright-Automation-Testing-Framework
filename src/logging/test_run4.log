@@ -179,3 +179,17 @@
   "sec-ch-ua-platform": "\"Windows\""
 }
          Modified Request type is GET
+2025-01-26T17:40:33+01:00 [info]: Modified Request headers: {
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "accept-language": "en-US",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.6943.16 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+  "sec-ch-ua-mobile": "?0",
+  "sec-ch-ua-platform": "\"Windows\""
+}
+Modified Request method: GET
+2025-01-26T17:43:28+01:00 [info]: Clicked login button
+2025-01-26T17:43:32+01:00 [info]: Service Title is visible
+2025-01-26T17:43:32+01:00 [info]: Test for login is completed
+2025-01-26T17:43:32+01:00 [info]: Auth state is saved
