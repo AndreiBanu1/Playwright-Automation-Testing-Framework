@@ -1,15 +1,19 @@
-import { test as base, expect as defaultExpect } from "@playwright/test";
-import LoginPage from "../pages/pagesActions/LoginPage";
-import HomePage from "../pages/pagesActions/HomePage";
-import { decrypt } from "../utils/CryptojsUtil";
+import { test as base, expect } from '@playwright/test';
+import LoginPage from '../pages/pagesActions/LoginPage';
+import HomePage from '../pages/pagesActions/HomePage';
+import { decrypt } from '../utils/CryptojsUtil';
 
-type UIPages = {
+type Fixtures = {
+  loginPage: LoginPage;
   homePage: HomePage;
 };
 
-export const expect = defaultExpect;
-// Define a custom fixture with page
-export const test = base.extend<UIPages>({
+export const test = base.extend<Fixtures>({
+  loginPage: async ({ page }, use) => {
+    const loginPage = new LoginPage(page);
+    await use(loginPage);
+  },
+
   homePage: async ({ page }, use) => {
     const loginPage = new LoginPage(page);
     await loginPage.navigateToLoginPage();
@@ -19,3 +23,5 @@ export const test = base.extend<UIPages>({
     await use(homePage);
   },
 });
+
+export { expect };

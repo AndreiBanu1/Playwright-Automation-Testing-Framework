@@ -9,6 +9,10 @@ export default class ContactPage {
     this.elements = new ContactPageElements(page);
   }
 
+  getPage(): Page {
+    return this.page;
+  }
+
   async createNewContact(fname: string, lname: string) {
     await this.elements.contactsLink.click();
     await this.elements.newButton.click();
@@ -33,7 +37,7 @@ export default class ContactPage {
   async expectContactLabelContainsFirstNameAndLastName(fname: string, lname: string) {
     await expect(this.elements.contactFullNameLabel).toContainText(`${fname} ${lname}`);
     logger.info(`New contact created and ${fname} ${lname} is visible`);
-    
+
     await this.elements.contactsLink.click();
   }
 
@@ -42,6 +46,6 @@ export default class ContactPage {
     await this.elements.searchBox.click();
     await this.elements.searchBox.fill(lname);
     await this.elements.searchBox.press("Enter");
-    await this.page.getByRole("link", { name: lname }).click(); 
+    await this.page.getByRole("link", { name: lname }).click();
   }
 }
