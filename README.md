@@ -1,4 +1,25 @@
-# Playwright Framework
+
+# Playwright Framework with AI Capabilities
+## AI Capabilities
+
+This framework leverages AI-powered automation to accelerate test creation and maintenance. Using advanced AI agents, you can:
+- Generate end-to-end Playwright test cases from natural language instructions or structured test case descriptions.
+- Automatically fix and iterate on test scripts based on real-time test results and errors.
+- Document the entire test generation process, including all user prompts, test steps, and iterative fixes.
+- Enhance test resiliency with AI-driven locator strategies and fallback mechanisms.
+
+AI assistance is integrated into the workflow, enabling rapid, robust, and maintainable test automation for complex web applications.
+
+## AI-Generated Test Case Example
+
+An example of an AI-generated test case is included in the project:
+
+- **Test Case:** Salesforce Login → Launch Sales Console → Verify “Seller Home” & Tiles
+- **Location:** `src/tests/AI-Generated-MCP-server/sf-login-app-sales-seller-home-001.spec.ts`
+- **Instructions & Prompts:** All instructions, user prompts, and the iterative process for generating this test are documented in `src/tests/AI-Generated-MCP-server/sf-login-app-sales-seller-home-001-instructions.txt`.
+
+This test was created by providing a detailed test scenario in plain English. The AI agent generated the Playwright test, iteratively fixed issues based on test results, and documented the process. The result is a robust, maintainable, and fully-documented automated test case.
+
 
 This repository contains a Playwright framework setup for automated testing. The framework is structured as follows:
 
