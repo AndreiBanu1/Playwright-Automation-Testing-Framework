@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -27,13 +27,13 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright tests/AI-Generated-MCP-server
-        run: npx playwright test --reporter=list
+      - name: Run Playwright AI-Generated-MCP-server tests only
+        run: npx playwright test src/tests/AI-Generated-MCP-server --reporter=list
 
       # Optionally upload test results/artifacts
       - name: Upload Playwright test results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: playwright-results
           path: playwright-report/
