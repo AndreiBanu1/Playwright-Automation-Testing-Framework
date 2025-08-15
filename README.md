@@ -12,7 +12,7 @@ AI assistance is integrated into the workflow, enabling rapid, robust, and maint
 
 ## AI-Generated Test Case Example
 
-An example of an AI-generated test case is included in the project:
+An example of an AI-generated test case is included in the project, using Playwright MCP Server:
 
 - **Test Case:** Salesforce Login → Launch Sales Console → Verify “Seller Home” & Tiles
 - **Location:** `src/tests/AI-Generated-MCP-server/sf-login-app-sales-seller-home-001.spec.ts`
