@@ -7,7 +7,7 @@ import { test, expect } from '@playwright/test';
 test('SF-LOGIN-APP-SALES-SELLER-HOME-001: Login, Launch Sales Console, Verify Seller Home & Tiles', async ({ page }) => {
   test.setTimeout(120000); // Increase timeout to 2 minutes for slow Salesforce login
   // Step 1: Navigate to login
-  await page.goto('https://login.salesforce.com', { waitUntil: 'domcontentloaded' });
+  await page.goto('https://samsung2-dev-ed.develop.my.salesforce.com/', { waitUntil: 'domcontentloaded' });
 
   // Assert login page loaded
   const usernameInput = page.locator('#username');
