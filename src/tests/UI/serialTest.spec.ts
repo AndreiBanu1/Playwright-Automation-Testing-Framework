@@ -1,7 +1,7 @@
-import { test } from "../fixtures/serialLoginFixture";
-import ContactPage from "../pages/pagesActions/ContactPage";
-import CasePage from "../pages/pagesActions/CasePage";
-import testdata from "../testdata/contactCaseFlow.json";
+import { test } from "../../fixtures/serialLoginFixture";
+import ContactPage from "../../pages/pagesActions/ContactPage";
+import CasePage from "../../pages/pagesActions/CasePage";
+import testdata from "../../testdata/contactCaseFlow.json";
 
 let contactPage: ContactPage;
 

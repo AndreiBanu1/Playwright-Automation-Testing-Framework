@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import logger from "../utils/LoggerUtil";
+import logger from "../../utils/LoggerUtil";
 
 test("API Monitoring test", async ({ page }) => {
   page.on("request", (request) => {

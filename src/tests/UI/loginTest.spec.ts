@@ -1,7 +1,7 @@
-import { test } from "../fixtures/loginFixture";
-import { decrypt } from "../utils/CryptojsUtil";
-import logger from "../utils/LoggerUtil";
-import { encryptEnvFile } from "../utils/EncryptEnvFile";
+import { test } from "../../fixtures/loginFixture";
+import { decrypt } from "../../utils/CryptojsUtil";
+import logger from "../../utils/LoggerUtil";
+import { encryptEnvFile } from "../../utils/EncryptEnvFile";
 
 const authFile = "src/config/auth.json";
 

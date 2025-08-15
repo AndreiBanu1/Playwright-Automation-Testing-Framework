@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import ContactApi from "../../api/ContactApi";
-import { getSalesforceAccessToken } from "../../utils/salesforceAuth";
+import { getSalesforceAccessToken } from "../../utils/SalesforceAuth";
+
 
 test("Create contact via API", async ({ playwright }) => {
   const { accessToken, instanceUrl } = await getSalesforceAccessToken();

@@ -70,3 +70,12 @@ Call log:
 [2m  - expect.toBeVisible with timeout 15000ms[22m
 [2m  - waiting for getByTitle('Service')[22m
 
+2025-08-15T11:40:20+02:00 [error]: Error waiting for Service Title to be visible: Error: [31mTimed out 15000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: getByTitle('Service')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 15000ms[22m
+[2m  - waiting for getByTitle('Service')[22m
+

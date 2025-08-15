@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import LoginPage from "../pages/pagesActions/LoginPage";
+import LoginPage from "../../pages/pagesActions/LoginPage";
 
 test("Verify Logo Placement and Size", async ({ page }) => {
   await page.goto("/");

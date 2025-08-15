@@ -1,0 +1,117 @@
+Test Case Automation Instructions for SF-LOGIN-APP-SALES-SELLER-HOME-001
+=======================================================================
+
+Date: August 15, 2025
+
+---
+
+## User Instructions Provided
+
+### Test Case Details
+- **ID:** SF-LOGIN-APP-SALES-SELLER-HOME-001
+- **Name:** Login → Launch Sales Console → Verify “Seller Home” & tiles
+- **Purpose:** Validate that a user can log into Salesforce, open the App Launcher, launch Sales Console, and see “Seller Home” with the expected sections.
+- **Priority:** High (smoke)
+- **Scope:** Salesforce Lightning Experience
+- **Preconditions:**
+  - Test user exists and is permitted to access the Sales Console app.
+  - MFA is disabled for the test user (or handled out of band).
+  - Network is stable and not blocking Salesforce domains.
+  - Browser starts with a clean profile (no active SFDC sessions).
+- **Test Data:**
+  - Username: andreibanu97@yahoo.com
+  - Password: Password123@
+- **URLs:**
+  - Login: https://login.salesforce.com
+- **Postconditions:** None; user remains logged in.
+- **Pass/Fail Criteria:** All expected UI elements render and are visible; all assertions pass.
+
+### Step-by-step with expected results & locator guidance
+
+1. **Navigate to login**
+   - Action: Open https://login.salesforce.com with waitUntil: "domcontentloaded".
+   - Assert (page loaded):
+     - Input #username is visible and enabled.
+     - Input #password is visible and enabled.
+     - Button #Login (label “Log In” or “Log in”) is visible.
+   - Locators:
+     - Username: CSS #username
+     - Password: CSS #password
+     - Login button: CSS #Login
+
+2. **Enter credentials**
+   - Action: Type Username → username; Type Password → password.
+   - Assert: Inputs contain the typed values (password value can be checked as filled, not read back).
+
+3. **Submit login**
+   - Action: Click #Login.
+   - Wait: For navigation + Lightning boot (recommend waitForLoadState("networkidle") then verify a Lightning UI control).
+   - Primary Assert (logged-in Lightning header present):
+     - App Launcher button (the “waffle”) is visible and enabled.
+   - Locator (preferred): page.getByRole('button', { name: /App Launcher/i })
+   - Fallbacks (if role mapping differs):
+     - page.getByLabel(/App Launcher/i)
+     - page.getByTitle(/App Launcher/i)
+     - Header waffle via CSS: button[title="App Launcher"]
+
+4. **Open App Launcher**
+   - Action: Click the App Launcher button.
+   - Assert (launcher opened):
+     - Search input with placeholder “Search apps and items…” is visible and focused.
+   - Locators:
+     - Search: page.getByPlaceholder('Search apps and items...')
+
+5. **Launch Sales Console**
+   - Action: In the App Launcher search, type Sales Console.
+   - Assert (search results):
+     - An app tile/link named “Sales Console” appears and is clickable.
+   - Action: Click Sales Console.
+   - Wait: For app shell + home to render (recommend waitForLoadState("networkidle") and then a heading assert).
+
+6. **Verify Seller Home title**
+   - Assert: A level-1 heading with exact text “Seller Home” is visible.
+   - Locators (try in order):
+     - page.getByRole('heading', { level: 1, name: 'Seller Home' })
+     - page.getByRole('heading', { name: 'Seller Home' })
+     - page.getByText(/^Seller Home$/)
+
+7. **Verify sub-category tiles on Seller Home**
+   - Target headings/cards expected to be visible:
+     - Close Deals
+     - Plan My Accounts
+     - Grow Relationships
+     - Build Pipeline
+     - My Goals
+     - Today's Events
+     - Today's Tasks
+     - Recent Records
+   - For each item above:
+     - Assert: Visible on the page (tile/card/section header). Prefer role-based locators first; fall back to exact text.
+   - Locators (per title):
+     - Preferred: page.getByRole('heading', { name: '<Title>' })
+     - Fallback: page.getByText(/^<Title>$/)
+
+---
+
+## User Prompts Provided
+
+1. "Use Playwright MCP server and automate provided test case. You need to navigate to the application in the browser, perform all steps of the test case and create a new spec file in the tests/AI-Generated-MCP-server with this automated test case: ..."
+2. "iteratively run the test case and fix the issues"
+3. "in the same folder, generate a text file, with all the instructions I provided you in order to generate this test case. Please include the test case and all the prompts I gave you. Also include in how many iterative runs you fixed the code"
+
+---
+
+## Iterative Runs to Fix the Code
+
+- 1st run: Initial test failed due to timeout after login (Lightning UI not loaded). Fixed by increasing timeout and waiting for App Launcher button.
+- 2nd run: Test failed to find Sales Console tile. Added fallback locator and debug logging.
+- 3rd run: Test failed to find App Launcher search input. Added fallback locator and increased wait time.
+- 4th run: Test timed out after clicking Sales Console. Added explicit wait for Seller Home heading.
+- 5th run: Test failed to find "Today's Tasks" tile. Added fallback to getByText for each tile and debug logging.
+- 6th run: Test passed successfully.
+
+**Total iterative runs to fix the code: 6**
+
+---
+
+This file documents all instructions, test steps, user prompts, and the iterative process used to achieve a passing automated Playwright test for the specified Salesforce scenario.
